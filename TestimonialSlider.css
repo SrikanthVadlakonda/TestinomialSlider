@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(204, 200, 200);
+
+}
+.slide-container{
+height: 800px;
+width:100%;
+
+background:radial-gradient(rgb(26, 122, 170),rgb(146, 247, 133));
+border-radius: 10px;
+
+}
+.slide-content{
+    margin:0 40px
+}
+.card{
+    margin-top: 80px;
+    border-radius: 25px;
+    background-color: rgb(252, 250, 250);
+
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+padding: 10px 14px;
+}
+.card-content h1{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(4, 20, 49);
+    padding-top: 10px;
+}
+.card-content p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(46, 44, 44);
+    padding-top: 10px;
+
+}
+.image-content{
+    position: relative;
+    row-gap:5px;
+    padding:25px 0;
+    
+    
+}
+.overlay{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width:100%;
+    background-color: rgb(41, 41, 238);
+    border-radius: 25px 25px 0 25px;
+}
+/*.overlay::before,
+.overlay::after{
+    content:'';
+   position: absolute; 
+   right:0;
+   bottom:-40px;
+   height:40px;
+   width: 40px;
+   background-color:rgb(137, 137, 185);
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: rgb(167, 29, 29); }*/
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    
+}
+.card-image .card-img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+object-position: center;
+border-radius: 50%;
+border: 4px solid rgb(236, 233, 20);
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+.description{
+    font-size: 14px;
+    color:gray;
+    text-align: center;
+}
+.button{
+    border:none;
+    font-size:16px;
+    color:white;
+    padding:8px 16px;
+    background-color: blue;
+    border-radius: 6px;
+    margin: 14px;
+}
+.button:hover{
+    background: rgb(81, 81, 148);
+}
